@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <EditText android:id="@+id/location" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="Address here..." />
+        <Button android:id="@+id/geocodeBtn" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:text="Search" />
+        <TextView android:id="@+id/position" android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:text="Latitude/Longitude..." />
+    </LinearLayout>
+    <com.google.android.maps.MapView
+        android:id="@+id/geoMap" android:layout_width="fill_parent"
+        android:layout_height="320px" android:clickable="true"
+        android:apiKey="key=AIzaSyDRqh8QSu6UQFeo995dui9yPfD-j7BMSR4" />
+</RelativeLayout>
+

@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">ListView CusrsorAdapter</string>
+ <string name="some_text">Some North American Countries!</string>
+ <string name="some_hint">Type here to filter</string>
+
+</resources>

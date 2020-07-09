@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <com.vidhu.appzoc.tripper.CustomAutoCompleteTextView
+        android:id="@+id/from"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="From"
+        android:singleLine="true" />
+    <com.vidhu.appzoc.tripper.CustomAutoCompleteTextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/to"
+        android:layout_below="@+id/from"
+        android:hint="To"
+        android:singleLine="true"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/to" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:background="@drawable/search"
+
+        android:layout_below="@+id/to"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_distance_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
